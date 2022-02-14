@@ -1,4 +1,5 @@
-//Problem Link:-
+//Problem Link:- https://practice.geeksforgeeks.org/problems/median-in-a-row-wise-sorted-matrix1527/1#
+//Yotube Link:- https://www.youtube.com/watch?v=NTop3VTjmxk
 
 //Approach 1:-Naive Approach
 //Time Complexity:- O(N*M)
