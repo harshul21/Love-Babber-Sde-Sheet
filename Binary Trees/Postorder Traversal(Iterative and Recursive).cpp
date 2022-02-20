@@ -29,3 +29,45 @@ vector <int> postOrder(Node* root)
 }
 
 //Iterative
+/* A binary tree node has data, pointer to left child
+   and a pointer to right child  
+struct Node
+{
+    int data;
+    struct Node* left;
+    struct Node* right;
+}; */
+
+//Function to return a list containing the postorder traversal of the tree.
+vector <int> postOrder(Node* root)
+{
+    vector<int> ans;
+    if(root==NULL){
+        return ans;
+    }
+    stack<Node*> st;
+    st.push(root);
+    stack<int> out;
+    
+    while(!st.empty()){
+        Node* curr=st.top();
+        st.pop();
+        
+        out.push(curr->data);
+        
+        if(curr->left){
+            st.push(curr->left);
+        }
+        
+        if(curr->right){
+            st.push(curr->right);
+        }
+    }
+    
+    while(!out.empty()){
+        ans.push_back(out.top());
+        out.pop();
+    }
+    
+    return ans;
+}
