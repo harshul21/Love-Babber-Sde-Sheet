@@ -1,5 +1,5 @@
 //Problem Link:- https://practice.geeksforgeeks.org/problems/first-and-last-occurrences-of-x3116/1
-//Time Complexity:- O(n*logn)
+//Time Complexity:- O(logn)
 int fo(int arr[],int n,int x)
 {
     int res=-1;
